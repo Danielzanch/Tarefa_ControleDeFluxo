@@ -4,7 +4,7 @@ public class Tarefa_ControleDeFluxo {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        String alternativa = "";
+        String alternativa = " ";
         do {
             System.out.println("Digite a Primeira Nota: ");
             Float nota1 = s.nextFloat();
@@ -38,7 +38,7 @@ public class Tarefa_ControleDeFluxo {
 
             System.out.println("Deseja fazer um novo calculo de media: ");
             alternativa = s.next();
-        } while (alternativa.equals("Sim"));
+        } while (alternativa.equalsIgnoreCase("Sim"));
 
         System.out.println("Obrigado por utilizar nossa calculadora de medias!");
     }
